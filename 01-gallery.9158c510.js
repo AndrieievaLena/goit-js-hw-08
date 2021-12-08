@@ -8,4 +8,4 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"TfQ5":[function(require,module,exports) {
 "use strict";require("../css/01-gallery.css"),require("../css/common.css"),require("simplelightbox/dist/simple-lightbox.min.css");var e=require("./gallery-items.js"),l=r(require("simplelightbox"));function r(e){return e&&e.__esModule?e:{default:e}}console.log(e.galleryItems);const s=document.querySelector(".gallery"),i=a(e.galleryItems);function a(e){return e.map(({preview:e,original:l,description:r})=>`<a class="gallery__item" href="${l}">\n                    <img class="gallery__image" src="${e}" alt="${r}" />\n                </a> `).join("")}s.insertAdjacentHTML("beforeend",i),new l.default(".gallery a",{disableRightClick:!0,scrollZoom:!1,captionDelay:250,captionsData:"alt"});
 },{"../css/01-gallery.css":"DWEx","../css/common.css":"DWEx","simplelightbox/dist/simple-lightbox.min.css":"DWEx","./gallery-items.js":"q5Rn","simplelightbox":"yx6k"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/parcel-project-template/01-gallery.9158c510.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.9158c510.js.map
