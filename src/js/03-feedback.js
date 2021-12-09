@@ -6,12 +6,16 @@ const localStorageDate = {
     email: '',
     message: '',
 };
+
 const refs = {
     form: document.querySelector('.feedback-form'),
     email: document.querySelector('input'),
-    textarea: document.querySelector('textarea'),
+    message: document.querySelector('textarea'),
+    submit: document.querySelector('button'),
+};
 
-}
+
+
 refs.form.addEventListener('submit', onFormSubmit);
 saveData()
 
